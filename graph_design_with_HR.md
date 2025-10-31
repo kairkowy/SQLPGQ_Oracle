@@ -623,11 +623,12 @@ Argentina                                                    Americas
 
 /*리전에 속한 나라들*/
 
+```sql
 select * from graph_table(hr_prov_n1
 match (s)-[e is LocatedIn]->(d)
 columns(vertex_id(s) as Vs, edge_id(e) as InRegion, vertex_id(d) as Vd)
 )
-
+```
 <img src="./images/locatedin.png" width="750px" height="350px"></img>
 
 
@@ -685,12 +686,12 @@ Neena                11/10/28 15/03/15 Accounting
 
 
 그래프 시각화 쿼리
-
+```sql
 select * from graph_table(hr_prov_brg
 match (v1 is employee)-[e1 is workedAt]->(d1 is department)
 columns(vertex_id(v1) as employee, vertex_id(d1) as department, edge_id(e1) as WorkedAt )
 )
-
+```
 <img src="./images/workedat.png" width="750px" height="350px"></img>
 
 
