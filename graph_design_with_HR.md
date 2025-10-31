@@ -629,6 +629,7 @@ match (s)-[e is LocatedIn]->(d)
 columns(vertex_id(s) as Vs, edge_id(e) as InRegion, vertex_id(d) as Vd)
 )
 ```
+
 <img src="./images/locatedin.png" width="750px" height="350px"></img>
 
 
@@ -692,6 +693,7 @@ match (v1 is employee)-[e1 is workedAt]->(d1 is department)
 columns(vertex_id(v1) as employee, vertex_id(d1) as department, edge_id(e1) as WorkedAt )
 )
 ```
+
 <img src="./images/workedat.png" width="750px" height="350px"></img>
 
 
@@ -822,6 +824,7 @@ columns(vertex_id(s) as Emp,
 ```
 
 <img src="./images/reportsto.png" width="750px" height="350px"></img>
+
 
 관리자 101의 부하 직원
 
